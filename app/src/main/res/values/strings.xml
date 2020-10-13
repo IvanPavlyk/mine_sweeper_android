@@ -4,4 +4,9 @@
     <string name="author_name">by Ivan Pavlyk</string>
     <string name="button_skip_text">Skip</string>
     <string name="image_mine_description">Image of the mine</string>
+    <string name="main_menu_text">Main Menu</string>
+    <string name="play_game_button_text">Play Game</string>
+    <string name="options_button_text">Options</string>
+    <string name="help_button_text">Help</string>
+    <string name="mine_image_menu_description">image shows the mine</string>
 </resources>
