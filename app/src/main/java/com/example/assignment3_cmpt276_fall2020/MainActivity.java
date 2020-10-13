@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         ImageView imageView = (ImageView) findViewById(R.id.imageViewMine);
         Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade);
         imageView.startAnimation(animation);
@@ -38,6 +37,5 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         }, 5000);*/
-
     }
 }
