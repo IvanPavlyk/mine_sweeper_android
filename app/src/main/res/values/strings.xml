@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Assignment3_cmpt276_fall2020</string>
+    <string name="app_name">Mine Searcher</string>
+    <string name="text_app_name">Mine Searcher</string>
+    <string name="author_name">by Ivan Pavlyk</string>
+    <string name="button_skip_text">Skip</string>
+    <string name="image_mine_description">Image of the mine</string>
 </resources>
