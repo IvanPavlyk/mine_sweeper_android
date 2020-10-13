@@ -1,0 +1,2 @@
+rootProject.name='Assignment3_cmpt276_fall2020'
+include ':app'
