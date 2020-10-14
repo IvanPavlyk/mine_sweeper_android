@@ -9,4 +9,7 @@
     <string name="options_button_text">Options</string>
     <string name="help_button_text">Help</string>
     <string name="mine_image_menu_description">image shows the mine</string>
+    <string name="settings_text">Settings</string>
+    <string name="board_size_text">Board Size</string>
+    <string name="number_of_mines_text">Number of Mines</string>
 </resources>
