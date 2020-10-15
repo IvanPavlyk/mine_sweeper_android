@@ -4,4 +4,28 @@
     <string name="author_name">by Ivan Pavlyk</string>
     <string name="button_skip_text">Skip</string>
     <string name="image_mine_description">Image of the mine</string>
+    <string name="main_menu_text">Main Menu</string>
+    <string name="play_game_button_text">Play Game</string>
+    <string name="options_button_text">Options</string>
+    <string name="help_button_text">Help</string>
+    <string name="mine_image_menu_description">image shows the mine</string>
+    <string name="settings_text">Settings</string>
+    <string name="board_size_text">Board Size</string>
+    <string name="number_of_mines_text">Number of Mines</string>
+    <string name="help_text">Help</string>
+    <string name="text_help_description">This is a Mine Searcher game developed by Ivan Pavlyk, undergraduate student of SFU</string>
+    <string name="text_game_description">In order to play the Mine Searcher game go back to the main menu and press the "Play Game" button. If you feel
+    like changing the settings of the game you can go to main menu and press on the Options button where you can change them. The goal of the game is to
+    find all of the hidden mines on the grid: the number of hidden mines left is shown on the screens, furthermore, every time you press on
+    specific button on the grid you perform a "scan" which will either reveal a hidden mine or show a number which represents the number
+    of hidden mines in the same row and column as the button you pressed. The game finishes when you reveal of the hidden names</string>
+    <string name="found_text">Found</string>
+    <string name="num_mines_found_text">0</string>
+    <string name="of_text">of</string>
+    <string name="num_mines_board_text">Default</string>
+    <string name="mines_text">Mines</string>
+    <string name="num_scans_used">0</string>
+    <string name="of_scans_used_text"># of Scans Used:</string>
+
+
 </resources>
