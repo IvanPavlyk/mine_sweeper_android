@@ -29,6 +29,12 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent = HelpActivity.makeIntent(MenuActivity.this);
             startActivity(intent);
         });
+
+        Button gameButton = (Button) findViewById(R.id.buttonPlayGame);
+        gameButton.setOnClickListener(v -> {
+            Intent intent = GameActivity.makeIntent(MenuActivity.this);
+            startActivity(intent);
+        });
     }
 
     public static Intent makeIntent(Context context){
