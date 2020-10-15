@@ -2,6 +2,7 @@ package com.example.assignment3_cmpt276_fall2020;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -28,5 +29,9 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent = HelpActivity.makeIntent(MenuActivity.this);
             startActivity(intent);
         });
+    }
+
+    public static Intent makeIntent(Context context){
+        return new Intent(context, MenuActivity.class);
     }
 }

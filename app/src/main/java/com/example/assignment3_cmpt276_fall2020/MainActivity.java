@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         imageView.startAnimation(animation);
         Button btn = (Button) findViewById(R.id.buttonSkip);
         btn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+            //Intent intent = new Intent(MainActivity.this, MenuActivity.class);
+            Intent intent = MenuActivity.makeIntent(MainActivity.this);
             startActivity(intent);
             finish();
         });
