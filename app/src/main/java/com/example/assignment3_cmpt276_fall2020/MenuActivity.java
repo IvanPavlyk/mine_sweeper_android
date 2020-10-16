@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.assignment3_cmpt276_fall2020.model.Options;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -35,6 +37,10 @@ public class MenuActivity extends AppCompatActivity {
             Intent intent = GameActivity.makeIntent(MenuActivity.this);
             startActivity(intent);
         });
+        Options options = Options.getInstance();
+        options.setRowCount(OptionsActivity.getRowsSaved(this));
+        options.setColCount(OptionsActivity.getColsSaved(this));
+        options.setNumMines(OptionsActivity.getNumMinesSaved(this));
     }
 
     public static Intent makeIntent(Context context){
