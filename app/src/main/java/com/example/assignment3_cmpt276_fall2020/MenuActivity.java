@@ -43,6 +43,11 @@ public class MenuActivity extends AppCompatActivity {
         options.setNumMines(OptionsActivity.getNumMinesSaved(this));
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
     public static Intent makeIntent(Context context){
         return new Intent(context, MenuActivity.class);
     }

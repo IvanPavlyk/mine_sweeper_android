@@ -45,4 +45,45 @@ public class Game {
         return cols;
     }
 
+    public int getInfoMines(int row, int col){
+        int numMines = 0;
+        for(int i = row; i >= 0; i--){
+            if(!grid[i][col].isRevealed() && grid[i][col].isBomb())
+                numMines++;
+        }
+        for(int i = row + 1; i < rows; i++){
+            if(!grid[i][col].isRevealed() && grid[i][col].isBomb())
+                numMines++;
+        }
+        for(int i = col - 1; i >= 0; i--){
+            if(!grid[row][i].isRevealed() && grid[row][i].isBomb())
+                numMines++;
+        }
+        for(int i = col + 1; i < cols; i++){
+            if(!grid[row][i].isRevealed() && grid[row][i].isBomb())
+                numMines++;
+        }
+        return numMines;
+    }
+
+
+    public int getNumScans() {
+        return numScans;
+    }
+
+    public void setNumScans(int numScans) {
+        this.numScans = numScans;
+    }
+
+    public int getNumMinesRevealed() {
+        return numMinesRevealed;
+    }
+
+    public void setNumMinesRevealed(int numMinesRevealed) {
+        this.numMinesRevealed = numMinesRevealed;
+    }
+
+    public int getNumMinesOverall(){
+        return numMinesOverall;
+    }
 }

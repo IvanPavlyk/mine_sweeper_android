@@ -9,6 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = (ImageView) findViewById(R.id.imageViewMine);
         Animation animation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.fade);
         imageView.startAnimation(animation);
+        TextView textAppName = (TextView) findViewById(R.id.textAppName);
+        textAppName.animate().rotationBy(720).setDuration(5000).start();
         Button btn = (Button) findViewById(R.id.buttonSkip);
         btn.setOnClickListener(v -> {
             //Intent intent = new Intent(MainActivity.this, MenuActivity.class);
@@ -29,14 +32,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-        /*Timer timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                Intent intent = new Intent(MainActivity.this, MenuActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        }, 5000);*/
     }
 }
