@@ -25,6 +25,12 @@ import com.example.assignment3_cmpt276_fall2020.model.Cell;
 import com.example.assignment3_cmpt276_fall2020.model.Game;
 import com.example.assignment3_cmpt276_fall2020.model.Options;
 
+/**
+ * GameActivity class that represents the screen where the user plays the game itself
+ * It shows the number of mines revealed so far and number of scans made so far
+ * Also shows the game board on which user scans to find the mines
+ * After user finds the last mine calls the alert/congrats dialog.
+ */
 public class GameActivity extends AppCompatActivity {
 
     Button[][] buttons;
@@ -104,6 +110,8 @@ public class GameActivity extends AppCompatActivity {
                 TextView textScansMade = (TextView) findViewById(R.id.textNumScans);
                 game.setNumScans(game.getNumScans() + 1);
                 textScansMade.setText("" + game.getNumScans());
+                MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.police_scanner);
+                mediaPlayer.start();
             }
         }
         else if(cellPressed.isRevealed() && cellPressed.isBomb() && !cellPressed.isPressed()){

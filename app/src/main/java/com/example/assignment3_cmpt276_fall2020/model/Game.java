@@ -2,6 +2,15 @@ package com.example.assignment3_cmpt276_fall2020.model;
 
 import java.util.Random;
 
+/**
+ * Game class represents game logic of the Mine Searcher game, in particular, represents model of the game grid
+ * which contains mines that user needs to find.
+ * grid attribute is a 2 dimensional array of Cell objects that represents the game grid
+ * rows and cols represent the number of rows and columns that grid has
+ * numMinesOverall represent how many mines are hidden on the grid initially
+ * numScans represents the number of scans user has made during this Game
+ * numMinesRevealed represents the number of mines user revealed so far.
+ */
 public class Game {
     private Cell[][] grid;
     private int rows, cols, numMinesOverall, numScans, numMinesRevealed;

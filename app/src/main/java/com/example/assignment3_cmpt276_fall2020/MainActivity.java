@@ -14,6 +14,12 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * MainActivity class represents the Welcome Screen that contains two animations of the title and
+ * of the image in the middle, on the skip button skips the animations and advances to the MainMenu
+ * screen. After first execution of the screen and advancement to the next screen this activity is
+ * finished.
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override

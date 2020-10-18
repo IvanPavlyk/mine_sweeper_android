@@ -13,6 +13,11 @@ import com.example.assignment3_cmpt276_fall2020.model.Options;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * MenuActivity class represents Main menu screen from where user can go to the game screen,
+ * options screen and to the help screen. All of those actions are bind to the corresponding
+ * button presses.
+ */
 public class MenuActivity extends AppCompatActivity {
 
     @Override

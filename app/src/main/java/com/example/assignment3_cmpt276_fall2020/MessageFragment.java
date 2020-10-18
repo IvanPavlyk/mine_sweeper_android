@@ -12,6 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
+/**
+ * MessageFragment class represents the congratulation dialog that pops up after the user
+ * finishes the game, on the positive button press advances back to the menu activity.
+ * Contains two images and congratulation text.
+ */
 public class MessageFragment extends AppCompatDialogFragment {
 
     @NonNull

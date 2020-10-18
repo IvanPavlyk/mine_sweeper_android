@@ -14,6 +14,11 @@ import android.widget.RadioGroup;
 
 import com.example.assignment3_cmpt276_fall2020.model.Options;
 
+/**
+ * OptionsActivity class represents the options screen that saves the game state between executions
+ * of the app through SharedPreferences. Contains two radio groups, one representing the board size
+ * of the game and the other representing the number of mines hidden on the game board.
+ */
 public class OptionsActivity extends AppCompatActivity {
 
     @Override

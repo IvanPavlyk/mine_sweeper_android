@@ -1,5 +1,12 @@
 package com.example.assignment3_cmpt276_fall2020.model;
 
+/**
+ * Cell class is used to create objects that represents cells of the game board grid
+ * row and col are row and column position of cell on the grid
+ * isBomb determines if the cell contains bomb
+ * isRevealed determines if the cell was ever revealed
+ * isPressed determines if the cell was pressed after it was revealed.
+ */
 public class Cell {
     private int row, col;
     private boolean isBomb;

@@ -1,5 +1,12 @@
 package com.example.assignment3_cmpt276_fall2020.model;
 
+/**
+ * Options singleton class used to store the options configurations of the game chosen by the user
+ * rowCount and colCount represent the row and column dimensions of the grid chosen by the user
+ * numMines represents the number of mines that will be hidden on the grid
+ * Options class is Singleton meaning that there will be only one instance of that class shared by
+ * other classes.
+ */
 public class Options {
     private int rowCount, colCount;
     private int numMines;
