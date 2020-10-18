@@ -9,9 +9,11 @@
 
     <TextView
         android:id="@+id/textMenu"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/headers_fancy"
+        android:gravity="center"
         android:text="@string/main_menu_text"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
@@ -36,12 +38,11 @@
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="#FFFFFF"
-        android:backgroundTint="#0C0C0C"
+        android:background="@drawable/buttons_fancy"
         android:text="@string/play_game_button_text"
-        android:textColor="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
         android:textSize="24sp"
-        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textMenu" />
 
@@ -51,11 +52,11 @@
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#0A0B0B"
         android:text="@string/options_button_text"
-        android:textColor="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
         android:textSize="24sp"
-        android:textStyle="italic"
+        android:background="@drawable/buttons_fancy"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPlayGame" />
 
@@ -65,11 +66,11 @@
         android:layout_height="76dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="#171717"
         android:text="@string/help_button_text"
-        android:textColor="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:background="@drawable/buttons_fancy"
         android:textSize="24sp"
-        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonOptions" />
 </androidx.constraintlayout.widget.ConstraintLayout>
